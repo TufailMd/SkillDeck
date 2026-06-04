@@ -35,6 +35,14 @@ export const metadata: Metadata = {
   title: "Skill Deck - Next-Gen Learning",
   description:
     "A futuristic student learning dashboard with live course progress, activity tracking, and personalized insights.",
+  icons: {
+    icon: "/images/site-logo.svg",
+    apple: "/apple-touch-icon.png",
+    other: [
+      { rel: "icon", url: "/favicon-32x32.png", sizes: "32x32" },
+      { rel: "icon", url: "/favicon-16x16.png", sizes: "16x16" },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -51,10 +59,16 @@ export default function RootLayout({
         ${syne.variable}
         ${geistSans.variable}
         ${geistMono.variable}
-        h-full antialiased
+        h-full antialiased dark
       `}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body
+        className="font-body-md antialiased bg-background text-on-surface 
+          min-h-screen overflow-x-hidden selection:bg-primary-container 
+          selection:text-on-primary-container"
+      >
+        {children}
+      </body>
     </html>
   );
 }
