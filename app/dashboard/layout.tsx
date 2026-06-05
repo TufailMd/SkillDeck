@@ -13,9 +13,9 @@ const DashboardLayout = ({ children }: { children: ReactNode }) => {
         className="fixed bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-primary-container/10 blur-[100px] z-[-1] pointer-events-none "
       />
       <main
-        className="flex-1 md:ml-18 p-grid-margin-mobile 
+        className="flex-1 md:ml-[4.5rem] p-grid-margin-mobile 
           md:p-grid-margin-desktop pb-24 md:pb-grid-margin-desktop 
-          lg:max-w-360 mx-auto w-full"
+          lg:max-w-[90rem] mx-auto w-full"
       >
         {children}
       </main>

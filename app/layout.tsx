@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -9,7 +8,7 @@ const dmSans = localFont({
   weight: "100 200 300 400 500 600 700 800 900",
 });
 
-const jetBrainsMon = localFont({
+const jetBrainsMono = localFont({
   src: "./fonts/JetBrainsMonoVF.ttf",
   variable: "--font-jet-brains-mono",
   weight: "100 200 300 400 500 600 700 800 900",
@@ -19,16 +18,6 @@ const syne = localFont({
   src: "./fonts/SyneVF.ttf",
   variable: "--font-syne",
   weight: "100 200 300 400 500 600 700 800 900",
-});
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -53,14 +42,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`
-        ${dmSans.variable}
-        ${jetBrainsMon.variable}
-        ${syne.variable}
-        ${geistSans.variable}
-        ${geistMono.variable}
-        h-full antialiased dark
-      `}
+      className={`${dmSans.variable} ${jetBrainsMono.variable} ${syne.variable} h-full antialiased dark`}
     >
       <body
         className="font-body-md antialiased bg-background text-on-surface 
