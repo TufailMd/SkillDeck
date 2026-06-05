@@ -71,4 +71,3 @@ function SidebarNavItem({ icon, label, href, isActive }: SidebarNavItemProps) {
 }
 
 export default SidebarNavItem;
-// git commit -m "feat: add animated sidebar navigation item with framer-motion and lucide icons"
