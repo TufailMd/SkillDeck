@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@supabase/ssr": "^0.10.3",
+    "@supabase/supabase-js": "^2.107.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-n": "^18.0.1",
