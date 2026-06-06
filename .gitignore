@@ -42,6 +42,11 @@ next-env.d.ts
 
 #extra
 record.md
+test.md
 
 /public/icons
 /public/images
+
+# tempo
+/supabase
+/lib

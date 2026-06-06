@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+
 import "./globals.css";
+import Sidebar from "@/components/layout/Sidebar";
 
 const dmSans = localFont({
   src: "./fonts/DMSansVF.ttf",
@@ -49,6 +51,7 @@ export default function RootLayout({
           min-h-screen overflow-x-hidden selection:bg-primary-container 
           selection:text-on-primary-container"
       >
+        <Sidebar />
         {children}
       </body>
     </html>

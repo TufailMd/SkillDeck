@@ -1,15 +1,25 @@
-import React from "react";
+import { Suspense } from "react";
 
-function page() {
+import ActivityTile from "@/components/bento/ActivityTile";
+import BentoGrid from "@/components/bento/BentoGrid";
+import CourseSkeletonRow from "@/components/bento/CourseSkeletonRow";
+import HeroTile from "@/components/bento/HeroTile";
+
+import CoursesList from "./courses-list";
+
+function DashboardPage() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold">Dashboard</h1>
-      <p className="mt-4 text-lg text-muted-foreground">
-        Welcome to your dashboard! Here you can track your learning progress,
-        view your activity, and access personalized insights.
-      </p>
-    </div>
+    <BentoGrid>
+      <HeroTile name="Tufail" date="Thursday, June 2026" streakDays={14} />
+
+      <section aria-label="Active Courses" className="md:col-span-12">
+        <Suspense fallback={<CourseSkeletonRow />}>
+          <CoursesList />
+        </Suspense>
+      </section>
+
+      <ActivityTile />
+    </BentoGrid>
   );
 }
-
-export default page;
+export default DashboardPage;
