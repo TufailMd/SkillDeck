@@ -16,7 +16,7 @@ interface CourseCardProps {
 function CourseCard({ course, animationDelay = 0 }: CourseCardProps) {
   return (
     <motion.div variants={itemVariants} transition={{ delay: animationDelay }}>
-      <GlowCard className="p-5 flex flex-col gap-4 h-full">
+      <GlowCard className="p-5 flex flex-col gap-4 h-full cursor-pointer">
         <div className="relative z-10 flex flex-col gap-4 flex-1">
           <div className="w-12 h-12 rounded-lg bg-secondary-container/20 border border-secondary-container/30 flex items-center justify-center flex-0">
             <DynamicIcon

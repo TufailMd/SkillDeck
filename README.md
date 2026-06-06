@@ -28,6 +28,12 @@ SkillDeck is a modern, performance-first learning dashboard that visualizes stud
 
 ---
 
+## 🌐 Live Demo
+
+👉
+
+---
+
 ## 🛠️ Tech Stack
 
 | Technology        | Purpose                                    | Version |
@@ -368,12 +374,20 @@ Then add a sign-in flow in your Next.js app to guard the dashboard.
 
 ---
 
-| Criterion                            | Weight | Implementation                                                                                                                             | Key Files                                                                                                                               |
-| ------------------------------------ | ------ | ------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
-| **Data Architecture & Next.js RSC**  | 30%    | Course data fetched server-side; zero client waterfalls; `courses` state never touches client JS                                           | app/dashboard/page.tsx, components/bento/courses-list.tsx, lib/supabase/server.ts                                                       |
-| **Framer Motion Proficiency**        | 30%    | Staggered entrance + spring physics; layoutId sidebar animations; animated progress bars; zero layout shifts                               | components/bento/BentoGrid.tsx, components/ui/GlowCard.tsx, components/ui/AnimatedProgressBar.tsx, components/layout/SidebarNavItem.tsx |
-| **Code Quality & Types**             | 20%    | Full TypeScript coverage; Supabase auto-generated types; error boundaries; proper suspense fallbacks                                       | lib/supabase/types.ts, app/dashboard/error.tsx, components/bento/CourseSkeletonRow.tsx                                                  |
-| **Visual Fidelity & Responsiveness** | 20%    | Dark mode Bento Grid; adaptive nav (sidebar → icons → bottom bar); CSS-only responsive; Tailwind v4 utilities; accessibility (ARIA labels) | app/globals.css, components/layout/Sidebar.tsx, components/layout/BottomNav.tsx, tailwind.config.ts                                     |
+## 👨‍💻 About the Developer
+
+This portfolio was designed and built by Md Tufail.
+
+- 🎓 B.Tech Computer Science Student at Parul University
+- 💻 Full-Stack Developer (React, Node.js, MongoDB)
+- 🧠 Strong foundation in DSA, OOP, and MVC Architecture
+- 🎯 Actively seeking internships and real-world projects
+
+## 📫 Connect with Me
+
+- GitHub: https://github.com/TufailMd
+- LinkedIn: https://linkedin.com/in/tufailmd
+- Email: jrtufailmd@gmail.com
 
 ---
 

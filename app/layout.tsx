@@ -26,14 +26,23 @@ export const metadata: Metadata = {
   title: "Skill Deck - Next-Gen Learning",
   description:
     "A futuristic student learning dashboard with live course progress, activity tracking, and personalized insights.",
+
   icons: {
-    icon: "/images/site-logo.svg",
-    apple: "/apple-touch-icon.png",
-    other: [
-      { rel: "icon", url: "/favicon-32x32.png", sizes: "32x32" },
-      { rel: "icon", url: "/favicon-16x16.png", sizes: "16x16" },
-    ],
+    icon: "/favicon.ico",
   },
+
+  keywords: [
+    "Skill Deck",
+    "learning dashboard",
+    "student platform",
+    "online education",
+    "course tracking",
+    "edtech",
+    "learning analytics",
+    "study progress",
+    "personalized learning",
+    "next-gen education",
+  ],
 };
 
 export default function RootLayout({
