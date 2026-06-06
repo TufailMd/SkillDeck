@@ -5,6 +5,7 @@ import BentoGrid from "@/components/bento/BentoGrid";
 import CourseSkeletonRow from "@/components/bento/CourseSkeletonRow";
 import HeroTile from "@/components/bento/HeroTile";
 
+import ActivityData from "./activity-data";
 import CoursesList from "./courses-list";
 
 function DashboardPage() {
@@ -18,7 +19,9 @@ function DashboardPage() {
         </Suspense>
       </section>
 
-      <ActivityTile />
+      <Suspense fallback={<ActivityTile heatmapData={[]} />}>
+        <ActivityData />
+      </Suspense>
     </BentoGrid>
   );
 }

@@ -3,7 +3,11 @@ import { motion } from "framer-motion";
 
 import { itemVariants } from "./BentoGrid";
 
-const HEATMAP_DATA: number[] = [
+interface ActivityTileProps {
+  heatmapData?: number[];
+}
+
+const DEFAULT_HEATMAP_DATA: number[] = [
   0, 1, 2, 1, 0, 0, 1, 2, 3, 2, 1, 0, 1, 2, 3, 2, 1, 2, 3, 4, 3, 2, 1, 0, 0, 1,
   2, 3, 4, 3, 2, 1, 0, 1, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 1, 0, 0, 1, 2, 1, 0, 1,
   2, 3, 4, 3, 2, 1, 1, 2, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 1, 2, 3, 2, 1, 0,
@@ -37,7 +41,9 @@ const MONTHS = [
 ];
 const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-function ActivityTile() {
+function ActivityTile({
+  heatmapData = DEFAULT_HEATMAP_DATA,
+}: ActivityTileProps) {
   return (
     <motion.div
       variants={itemVariants}
@@ -104,7 +110,7 @@ function ActivityTile() {
             {Array.from({ length: COLS }).map((_, colIdx) => (
               <div key={colIdx} className="flex flex-col gap-1 flex-1">
                 {Array.from({ length: ROWS }).map((_, rowIdx) => {
-                  const intensity = HEATMAP_DATA[rowIdx * COLS + colIdx] ?? 0;
+                  const intensity = heatmapData[rowIdx * COLS + colIdx] ?? 0;
                   return (
                     <div
                       key={rowIdx}
