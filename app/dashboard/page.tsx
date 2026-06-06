@@ -10,7 +10,7 @@ import CoursesList from "./courses-list";
 function DashboardPage() {
   return (
     <BentoGrid>
-      <HeroTile name="Tufail" date="Thursday, June 2026" streakDays={14} />
+      <HeroTile name="TruCoder" date="Thursday, June 2026" streakDays={14} />
 
       <section aria-label="Active Courses" className="md:col-span-12">
         <Suspense fallback={<CourseSkeletonRow />}>
