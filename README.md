@@ -30,7 +30,7 @@ SkillDeck is a modern, performance-first learning dashboard that visualizes stud
 
 ## 🌐 Live Demo
 
-👉
+👉https://skill-deck-eta.vercel.app/dashboard
 
 ---
 
